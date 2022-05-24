@@ -1,0 +1,112 @@
+.NavBar{
+    position: absolute;
+    width: 100%;
+    height: 3.5rem;
+    background-color: black;
+}
+
+.inicio{
+    margin-left: 3rem;
+}
+
+.name-logo{
+    position: absolute;
+    margin: -0.4rem 0 0 -72rem;
+    color: rgb(122, 218, 250);
+    font-size: 0.5rem;
+    text-decoration: none;
+    padding: 2.1rem 0 0 0;
+}
+
+.MenuNav{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav:hover{
+    color: rgb(122, 218, 250);
+    transition: 0.3s;
+}
+
+.slach{
+    color: rgba(255, 255, 255, 0);
+}
+
+.login{
+    background-color: rgba(255, 255, 255, 0.444);
+    border: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 0.37rem;
+}
+
+.login:hover{
+    background-color: rgba(122, 218, 250, 0.444);;
+    border-color:rgb(122, 218, 250); 
+}
+
+.create{
+    color: wheat;
+}
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+      position: absolute;
+      margin: -0.6rem 0 0 -72rem;
+    height: 6vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 5s linear;
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.MenuNav li ul {
+    display:none; 
+    background-color: black;
+    border-radius: 0.2rem;
+    border: solid rgb(154, 154, 154);
+    color: white;
+    padding: 0.8rem 1.6rem 0.6rem;
+    position:absolute;
+    top: 2.9rem;
+    min-width:140px;
+   
+}
+
+.MenuNav li:hover ul {
+    display:block;
+}
+
+.MenuNav li ul a:hover {
+    color: rgb(122, 218, 250);;
+    transition: 0.3s;
+}
+
+.sub-produ{
+    text-decoration: none;
+    color: white;
+}
