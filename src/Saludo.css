@@ -1,0 +1,64 @@
+.div{
+  display: flex;
+  justify-content: center;
+}
+
+.saludo{
+  position: absolute;
+  margin: 15rem 0 0 0;
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: solid;
+  padding: 3rem;
+}
+
+.saludo {
+	-webkit-animation: color-change-5x 0.5s linear infinite alternate both;
+	        animation: color-change-5x 0.5s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+    border-color: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+    border-color: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+    border-color: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+    border-color: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+    border-color: #3bd80d;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+    border-color: #2aea19;
+  }
+  25% {
+    background: #b22cff;
+    border-color: #ff2c2c;
+  }
+  50% {
+    background: #ea2222;
+    border-color: #2233ea;
+  }
+  75% {
+    background: #f5be10;
+    border-color: #10c7f5;
+  }
+  100% {
+    background: #3bd80d;
+    border-color: #bdd80d;
+  }
+}

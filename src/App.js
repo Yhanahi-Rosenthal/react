@@ -1,10 +1,13 @@
 import NavBar from "./components/NavBar";
-import './style.css';
+import ItemListSaluda from "./components/ItemListSaluda"
+import './NavBar.css';
+import './Saludo.css';
 
 function App() {
   return (
     <div>
-       <NavBar />
+      <NavBar />
+      <ItemListSaluda msg={"Hola"} tutor={"Christhian"} /> 
     </div>
   );
 }

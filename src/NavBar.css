@@ -11,12 +11,42 @@
 
 .name-logo{
     position: absolute;
-    margin: -0.4rem 0 0 -72rem;
-    color: rgb(122, 218, 250);
-    font-size: 0.5rem;
+    margin: -0.5rem 0 0 -72rem;
+    color: rgb(205, 112, 255);
+    font-size: 0.7rem;
+    font-style:oblique;
+    font-family:fantasy;
     text-decoration: none;
     padding: 2.1rem 0 0 0;
 }
+
+.name-logo{
+	-webkit-animation: color-change-3x 4s linear infinite alternate both;
+	        animation: color-change-3x 4s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-3x {
+    0% {
+      color: #cd70ff;
+    }
+    50% {
+      color: #0000ff;
+    }
+    100% {
+      color: #ff0000;
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+        color: #cd70ff;
+      }
+      50% {
+        color: #0000ff;
+      }
+      100% {
+        color: #ff0000;
+      }
+  }
 
 .MenuNav{
     display: flex;
@@ -33,7 +63,7 @@
 }
 
 .nav:hover{
-    color: rgb(122, 218, 250);
+    color: rgb(183, 83, 255);
     transition: 0.3s;
 }
 
@@ -50,12 +80,12 @@
 }
 
 .login:hover{
-    background-color: rgba(122, 218, 250, 0.444);;
-    border-color:rgb(122, 218, 250); 
+    background-color: rgba(201, 122, 250, 0.444);;
+    border-color:rgb(183, 83, 255); 
 }
 
 .create{
-    color: wheat;
+    color: rgb(218, 161, 253);
 }
 
 .App {
@@ -71,7 +101,7 @@
   
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
-      animation: App-logo-spin infinite 5s linear;
+      animation: App-logo-spin infinite 6s linear;
     }
   }
 
@@ -80,7 +110,7 @@
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(-360deg);
     }
   }
 
@@ -102,11 +132,31 @@
 }
 
 .MenuNav li ul a:hover {
-    color: rgb(122, 218, 250);;
+    color: rgb(183, 83, 255);
     transition: 0.3s;
 }
 
 .sub-produ{
     text-decoration: none;
     color: white;
+}
+
+.cantidad-c{
+  display: inline;
+}
+
+.carrito{
+  margin: 0.2rem 0;
+  padding: 0;
+  filter: invert();
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.cantidad-c{
+  font-size: 0.7rem;
+  padding: 0 0.27rem;
+  background-color: #e21e1e;
+  border-radius: 20rem;
+  color:white;
 }
