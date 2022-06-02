@@ -16,7 +16,7 @@ function NavBar(){
                                      <ul className="sub-menu">
                                         <li><a href="#" className="sub-produ">Smart TV</a></li>
                                         <hr />
-                                        <li><a href="#" className="sub-produ">Smart Watch</a></li>
+                                        <li><a href="#" className="sub-produ">SmartWatch</a></li>
                                         <hr />
                                         <li><a href="#" className="sub-produ">Tablets</a></li>
                                         <hr />

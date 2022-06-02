@@ -1,14 +1,15 @@
 import NavBar from "./components/NavBar";
-import ItemListSaluda from "./components/ItemListSaluda"
 import './NavBar.css';
-import './Saludo.css';
+import ItemCount from "./components/ItemCount";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <ItemListSaluda msg={"Hola"} tutor={"Christhian"} /> 
-    </div>
+      <div>
+        <NavBar />
+        <br /><br />
+        <br />
+        <ItemCount desde={1} hasta={5} />
+      </div>
   );
 }
 
