@@ -1,10 +1,11 @@
 import carrito from "../carrito-de-compras.png"
-import "../CartWidget.css";
+import "../css/CartWidget.css";
 
 function CartWidget(){
+
     return  <div className="divCarrito">
                 <img src={carrito} className="carrito" />  
-                <p className="cantidad-c">3</p>
+                <p className="cantidad-c">9+</p>
             </div>   
 }
 

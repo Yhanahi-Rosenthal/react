@@ -1,29 +1,45 @@
 import React, { useState } from "react";
+import laptop from '../img/item-laptop.jpg';
+import '../css/ItemCount.css';
 
-export default function ItemCount ({ desde, hasta }) {
-    const [x, contador] = useState(1)
+export default function ItemCount ({ desde, hasta, onAdd }) {
+    const [numero, setContador] = useState(1)
 
     console.log('render')
     return(
         
             <>
-                <div style={{ border: '1px solid red', height: '80px', width: '180px'}}>{x}
-                <br />
-                <button
-                    onClick={() =>{
-                        desde < 6 ? contador(x + 1) : contador(x)
-                    }}
-                >
-                        +
-                </button>
-                <button
-                    onClick={() =>{
-                        hasta > 0 ? contador(x - 1) : contador(x)
-                    }}
-                >
-                        -
-                </button>
-                </div>              
+                <div className="card-laptop">
+                    <div>
+                        <img src={laptop} className="img-laptop" />
+                    </div>
+                    <div className="container-contador">
+                    <br />
+                    <button
+                        onClick={() =>{
+                            numero > desde ? setContador(numero - 1) : alert('No puede ser menos de 1')
+                        }}
+                        className="button"
+                    >
+                            -
+                    </button>
+                    {numero}
+                    <button
+                        onClick={() =>{
+                            numero < hasta ? setContador(numero + 1) : alert('No hay mas stock de este producto')
+                        }}
+                        className="button"
+                    >
+                            +
+                    </button>
+                    </div>     
+                        <button className="boton" 
+                            onClick={() =>{
+                               onAdd(numero)
+                            }}> 
+                                Agregar al carrito
+                            </button>
+                </div>            
             </>
            
            
