@@ -1,0 +1,6 @@
+.contenedor{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 0.5fr);
+    text-align: center;
+}
