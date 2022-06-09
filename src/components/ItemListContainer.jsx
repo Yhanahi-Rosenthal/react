@@ -3,19 +3,19 @@ import ItemList from "./ItemList";
 
 const ItemListContainer = () =>{
 
-    const [computadoras, setComputadoras] = useState([])
+    const [donuts, setDonuts] = useState([])
 
     useEffect(() =>{
-        fetch("https://rickandmortyapi.com/api/character")
+        fetch("/public/Donuts.json")
             .then((res) => res.json())
-            .then(res => setComputadoras(res.results))
+            .then(res => setDonuts(res))
             .catch(error => console.error("Error", error))
         
     }, [])
 
     return(
         <div>
-            <ItemList computadoras={computadoras} />
+            <ItemList donuts={donuts} />
         </div>
     )
 }

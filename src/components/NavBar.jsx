@@ -1,4 +1,4 @@
-import logo from "../logo1.png";
+import logo from "../cakeCloud.png";
 import Carrito from "./CartWidget";
 
 function NavBar(){
@@ -7,18 +7,17 @@ function NavBar(){
                     <div className="NavBar">
                         <nav className="menu">
                             <ul className="MenuNav">
-                                <img src={logo} className="App-logo" />
-                                <a href="#" className="name-logo">E X T R E M E</a>
+                                <li><img src={logo} className="nav App-logo" /></li>        
                                 <li><a href="#" className="nav inicio">Inicio</a></li>
-                                <li><a href="#" className="nav">Celulares</a></li>
-                                <li><a href="#" className="nav">Computadoras</a></li>
-                                <li><a href="#" className="nav sub-menu1">Electrodomesticos</a>
+                                <li><a href="#" className="nav">Muffin's</a></li>
+                                <li><a href="#" className="nav">Cake's</a></li>
+                                <li><a href="#" className="nav sub-menu1">Especiales</a>
                                      <ul className="sub-menu">
-                                        <li><a href="#" className="sub-produ">Smart TV</a></li>
+                                        <li><a href="#" className="sub-produ">Cake Cloud</a></li>
                                         <hr />
-                                        <li><a href="#" className="sub-produ">SmartWatch</a></li>
+                                        <li><a href="#" className="sub-produ">Popcake</a></li>
                                         <hr />
-                                        <li><a href="#" className="sub-produ">Tablets</a></li>
+                                        <li><a href="#" className="sub-produ">Donuts personalizadas</a></li>
                                         <hr />
                                     </ul>
                                 </li>

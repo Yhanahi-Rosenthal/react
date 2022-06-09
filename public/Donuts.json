@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "name": "Bon o Bon",
+    "price": 140,
+    "img": "../src/img/BonOBon.png"
+},
+{
+    "id": 2,
+    "name": "Choco FULL",
+    "price": 136,
+    "img": "../src/img/Choco-full.png"
+},
+{
+    "id": 3,
+    "name": "Choco Spring",
+    "price": 120,
+    "img": "../src/img/Chocolate-Springles.png"
+},
+{
+    "id": 4,
+    "name": "Chocotorta",
+    "price": 154,
+    "img": "../src/img/Chocotorta.png"
+},
+{
+    "id": 5,
+    "name": "Dulce de leche",
+    "price": 110,
+    "img": "../src/img/DulceDeLeche.png"
+},
+{
+    "id": 6,
+    "name": "Marroc",
+    "price": 157,
+    "img": "../src/img/Marroc.png"
+},
+{
+    "id": 7,
+    "name": "Nutella",
+    "price": 155,
+    "img": "../src/img/Nutella.png"
+},
+{
+    "id": 8,
+    "name": "Donut Oreo",
+    "price": 160,
+    "img": "../src/img/Oreo.png"
+},
+{
+    "id": 9,
+    "name": "Pink Spring",
+    "price": 130,
+    "img": "../src/img/Pink-Springles.png"
+},
+{
+    "id": 10,
+    "name": "Mega Glas",
+    "price": 140,
+    "img": "../src/img/SuperGlas.png"
+}
+]

@@ -3,6 +3,10 @@ import '../src/css/NavBar.css';
 import ItemCount from "./components/ItemCount";
 import ItemListContainer from "./components/ItemListContainer";
 import { useState } from "react";
+import '../src/css/index.css';
+import portada from './img/portada1.png'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
 
@@ -13,6 +17,7 @@ function App() {
   return (
       <div>
         <NavBar />
+        <img src={portada} className="portada" />
         <br /><br />
         <br />
         {/* <ItemCount desde={1} hasta={10} onAdd={onAdd} /> */}

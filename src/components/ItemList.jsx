@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Item from "./Item";
 
-const ItemList = ({computadoras}) => {
+const ItemList = ({donuts}) => {
 
     const [cargando, setCargando] = useState(true)
     const [resultado, setResultado] = useState(false)
@@ -28,7 +28,7 @@ const ItemList = ({computadoras}) => {
     return(
         <div className="contenedor">
             {cargando && 'Cargando...'}
-            {resultado && computadoras?.map(computadora => <Item key={computadora.id} computadora={computadora} />)}
+            {resultado && donuts?.map(donut => <Item  donut={donut.id} />)}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import laptop from '../img/item-laptop.jpg';
+import dona from '../img/BonOBon.png';
 import '../css/ItemCount.css';
 
 export default function ItemCount ({ desde, hasta, onAdd }) {
@@ -11,7 +11,7 @@ export default function ItemCount ({ desde, hasta, onAdd }) {
             <>
                 <div className="card-laptop">
                     <div>
-                        <img src={laptop} className="img-laptop" />
+                        <img src={dona} className="img-laptop" />
                     </div>
                     <div className="container-contador">
                     <br />
