@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
-import ItemList from "./ItemList";
+import ItemDetail from "./ItemDetail";
 
-const ItemListContainer = () =>{
+const ItemDetailContainer = () =>{
 
-    const [donuts, setDonuts] = useState([])
+    const [donuts1, setDonuts1] = useState([])
 
     useEffect(() =>{
         fetch("/Donuts.json")
             .then((res) => res.json())
-            .then(res => setDonuts(res))
+            .then(res => setDonuts1(res))
             .catch(error => console.error("Error", error))
         
     }, [])
 
     return(
         <div>
-            <ItemList donuts={donuts} />
+            <ItemDetail donuts1={donuts1} />
         </div>
     )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer

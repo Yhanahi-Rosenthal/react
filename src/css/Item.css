@@ -5,6 +5,7 @@
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 1.6rem;
+    margin: 1rem 0 3rem 1rem;
 }
 
 .boton{
@@ -15,7 +16,7 @@
     height: 2rem;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    margin-top: -7rem;
+    margin-top: -1.3rem;
 }
 
 .boton:hover{
@@ -23,3 +24,39 @@
     background-color: rgb(219, 0, 201);
 }
 
+.nombre{
+    margin-top: -0.1rem;
+}
+
+.precio{
+    margin-top: -1.1rem;
+    font-size: 1rem;
+}
+
+.img-dona{
+    margin-top: -1.8rem;
+    width: 8rem;
+    border: solid aqua;
+    border-radius: 20rem;
+}
+
+.button{
+    height: 1.3rem;
+    background-color: rgba(24, 207, 243, 0.556);
+    border-radius: 5px;
+    border-color: rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+.card-donut{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+    width: 12rem;
+    height: 15rem;
+    box-shadow: 0.5px 0.5px 20px 0.2px rgb(255, 0, 247);
+    background-color: rgb(255, 209, 242);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}

@@ -1,8 +1,10 @@
 import React from "react";
-import Dona from '../img/Marroc.png';
 import '../css/Item.css';
 
 const Item = ({donut})=>{
+
+    const {img, name, price} = donut
+
     return(
         <>
             
@@ -10,14 +12,14 @@ const Item = ({donut})=>{
                         <div>
                             <img src={donut.img} className="img-dona" />
                         </div>
-                        <p className="nombre">Donut Marroc</p>
-                        <p className="precio">'$' + ${donut.price}</p>
+                        <p className="nombre">{donut.name}</p>
+                        <p className="precio">${donut.price}</p>
                         <div className="container-contador">
                             
                         <br />
                         </div>     
                             <button className="boton" > 
-                                    Ver detalle del producto
+                                    Ver detalle
                             </button>
                     </div>   
                

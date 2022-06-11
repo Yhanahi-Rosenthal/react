@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Item from "./Item";
+import "../css/Item.css"
 
 const ItemList = ({donuts}) => {
 
@@ -28,7 +29,7 @@ const ItemList = ({donuts}) => {
     return(
         <div className="contenedor">
             {cargando && 'Cargando...'}
-            {resultado && donuts?.map(donut => <Item  donut={donut.id} />)}
+            {resultado && donuts?.map(donut => <Item key={donut.id} donut={donut} />)}
         </div>
     )
 }
