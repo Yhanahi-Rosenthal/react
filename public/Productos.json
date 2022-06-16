@@ -67,5 +67,47 @@
     "price": 140,
     "img": "./img/SuperGlas.png",
     "category": "Donuts" 
+},
+{
+    "id": 11,
+    "name": "Muffin Cloud",
+    "price": 106,
+    "img": "./img/Muffins-cloud.png",
+    "category": "Muffins" 
+},
+{
+    "id": 12,
+    "name": "Muffin Flower",
+    "price": 192,
+    "img": "./img/Muffins-flower.png",
+    "category": "Muffins" 
+},
+{
+    "id": 13,
+    "name": "Muffin Iris",
+    "price": 110,
+    "img": "./img/Muffins-iris.png",
+    "category": "Muffins" 
+},
+{
+    "id": 14,
+    "name": "PopCake Pink",
+    "price": 89,
+    "img": "./img/pop-pink.png",
+    "category": "PopCakes" 
+},
+{
+    "id": 15,
+    "name": "PopCake Choco",
+    "price": 89,
+    "img": "./img/choco-pop.png",
+    "category": "PopCakes" 
+},
+{
+    "id": 16,
+    "name": "PopCake Iris",
+    "price": 89,
+    "img": "./img/popcake-iris.png",
+    "category": "PopCakes" 
 }
 ]

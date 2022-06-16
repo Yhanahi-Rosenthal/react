@@ -1,26 +1,19 @@
 import logo from "../cakeCloud.png";
 import Carrito from "./CartWidget";
+import {Link} from 'react-router-dom'; 
 
 function NavBar(){
-    return  <div>
+    return( <>
+                
                 <header>
                     <div className="NavBar">
                         <nav className="menu">
                             <ul className="MenuNav">
-                                <li><img src={logo} className="nav App-logo" /></li>        
-                                <li><a href="#" className="nav inicio">Inicio</a></li>
-                                <li><a href="#" className="nav">Muffin's</a></li>
-                                <li><a href="#" className="nav">Cake's</a></li>
-                                <li><a href="#" className="nav sub-menu1">Especiales</a>
-                                     <ul className="sub-menu">
-                                        <li><a href="#" className="sub-produ">Cake Cloud</a></li>
-                                        <hr />
-                                        <li><a href="#" className="sub-produ">Popcake</a></li>
-                                        <hr />
-                                        <li><a href="#" className="sub-produ">Donuts personalizadas</a></li>
-                                        <hr />
-                                    </ul>
-                                </li>
+                                <li><Link to="/Inicio"><img src={logo} className="nav App-logo" /></Link></li>    
+                                <li><Link to="/Inicio" className="nav inicio">Inicio</Link></li>
+                                <li><Link to="/Muffins" className="nav inicio">Muffin's</Link></li>
+                                <li><Link to="/PopCake" className="nav inicio">PopCake</Link></li>
+                                <li><Link to="/Donuts" className="nav inicio">Donut's</Link></li>
                     
                                 <Carrito />
                                 <li><a href="#" className="nav login">Log in</a></li>
@@ -29,7 +22,13 @@ function NavBar(){
                         </nav>
                     </div>
                 </header>
-            </div>
+        
+    </>
+
+    ) 
+        
+    
+   
 }
 
 export default NavBar;

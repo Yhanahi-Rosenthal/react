@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Item from "./Item";
 import "../css/Item.css";
-import Portada from "../Portada.png";
+import Portada from "../Portada2.png";
 
-const ItemList = ({productos}) => {
+const PopCake = ({productos}) => {
 
+    const [id, name, price, category] = productos
     const [cargando, setCargando] = useState(true)
     const [resultado, setResultado] = useState(false)
 
@@ -27,15 +28,15 @@ const ItemList = ({productos}) => {
     }, [])
        
 
-    return( <>   
+    return(<>
         <br /><br /><br />
-        <img alt="Portada" src={Portada} className="portada" />
+        <img alt="Portada" src={Portada} className="portada" /> 
         <div className="contenedor">
             {cargando && 'Cargando...'}
-            {resultado && productos?.map(producto => <Item key={producto.id} producto={producto} />)}
+            {resultado && productos?.filter(producto => producto.category.includes('PopCakes')).map((producto) => <Item key={producto.id} producto={producto}/>)}
         </div>
         </>
     )
 }
 
-export default ItemList;
+export default PopCake;

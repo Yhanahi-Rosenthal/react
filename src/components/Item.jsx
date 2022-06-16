@@ -1,26 +1,24 @@
 import React from "react";
 import '../css/Item.css';
+import { Link } from "react-router-dom";
+import ItemDetail from "../components/ItemDetail";
 
-const Item = ({donut})=>{
-
-    const {img, name, price} = donut
+const Item = ({producto})=>{
 
     return(
         <>
             
                 <div className="card-donut">
                         <div>
-                            <img src={donut.img} className="img-dona" />
+                            <img src={producto.img} className="img-dona" />
                         </div>
-                        <p className="nombre">{donut.name}</p>
-                        <p className="precio">${donut.price}</p>
+                        <p className="nombre">{producto.name}</p>
+                        <p className="precio">${producto.price}</p>
                         <div className="container-contador">
                             
                         <br />
                         </div>     
-                            <button className="boton" > 
-                                    Ver detalle
-                            </button>
+                            <button className="boton"><Link to={producto.category} >Ver detalle</Link></button>
                     </div>   
                
                          

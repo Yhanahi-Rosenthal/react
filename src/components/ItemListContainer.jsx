@@ -3,19 +3,19 @@ import ItemList from "./ItemList";
 
 const ItemListContainer = () =>{
 
-    const [donuts, setDonuts] = useState([])
+    const [productos, setProductos] = useState([])
 
     useEffect(() =>{
-        fetch("/Donuts.json")
+        fetch("/Productos.json")
             .then((res) => res.json())
-            .then(res => setDonuts(res))
+            .then(res => setProductos(res))
             .catch(error => console.error("Error", error))
         
     }, [])
 
     return(
         <div>
-            <ItemList donuts={donuts} />
+            <ItemList productos={productos} />
         </div>
     )
 }

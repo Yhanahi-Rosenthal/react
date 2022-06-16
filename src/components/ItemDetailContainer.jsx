@@ -3,19 +3,19 @@ import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () =>{
 
-    const [donuts1, setDonuts1] = useState([])
+    const [productos1, setProductos1] = useState([])
 
     useEffect(() =>{
-        fetch("/Donuts.json")
+        fetch("/Productos.json")
             .then((res) => res.json())
-            .then(res => setDonuts1(res))
+            .then(res => setProductos1(res))
             .catch(error => console.error("Error", error))
         
     }, [])
 
     return(
         <div>
-            <ItemDetail donuts1={donuts1} />
+            <ItemDetail productos1={productos1} />
         </div>
     )
 }

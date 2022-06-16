@@ -38,6 +38,7 @@
     width: 8rem;
     border: solid aqua;
     border-radius: 20rem;
+    box-shadow: 0 0 3rem -1rem aqua;
 }
 
 .button{
