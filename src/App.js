@@ -36,7 +36,7 @@ function App() {
           <Route path="/Muffins" element={<Muffins productos={productos} />} />
           <Route path="/PopCake" element={<PopCake productos={productos}  />} />
           <Route path="/Donuts" element={<Donuts productos={productos} />} />
-          <Route path="/ItemDetail" element={<ItemDetailContainer />} />
+          <Route path="/Detail/:id" element={<ItemDetailContainer />} />
         </Routes>  
       </BrowserRouter>
       

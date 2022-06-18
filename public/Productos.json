@@ -3,111 +3,127 @@
     "name": "Bon o Bon",
     "price": 140,
     "img": "./img/BonOBon.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut rellena de crema de avellanas"
 },
 {
     "id": 2,
     "name": "Choco FULL",
     "price": 136,
     "img": "./img/Choco-full.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut glaseada puramente con chocolate y lluvia de chispitas"
 },
 {
     "id": 3,
     "name": "Choco Spring",
     "price": 120,
     "img": "./img/Chocolate-Springles.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut glaseada con una capa de dulce primavera destellando los colores del amor" 
 },
 {
     "id": 4,
     "name": "Choco Cake",
     "price": 154,
     "img": "./img/Chocotorta.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut espolvoreada de chocolate con un lijero sabor a canela" 
 },
 {
     "id": 7,
     "name": "Nutella",
     "price": 155,
     "img": "./img/Nutella.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut rellena con la especial crema de Nutella"
 },
 {
     "id": 6,
     "name": "Marroc",
     "price": 157,
     "img": "./img/Marroc.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut cubierta de un chocolate crocante rellena de crema especial Marroc" 
 },
 {
     "id": 5,
     "name": "Caramel",
     "price": 110,
     "img": "./img/DulceDeLeche.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut rellena con salsa especial caramel y un glaseado acaramelado"
 },
 {
     "id": 8,
     "name": "Donut Oreo",
     "price": 160,
     "img": "./img/Oreo.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut glaseada de galletita Oreo y rellena con su crema especial" 
 },
 {
     "id": 9,
     "name": "Pink Spring",
     "price": 130,
     "img": "./img/Pink-Springles.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut glaseada con azucar pink y con lluvia de colores primaverales" 
 },
 {
     "id": 10,
     "name": "Mega Glas",
     "price": 140,
     "img": "./img/SuperGlas.png",
-    "category": "Donuts" 
+    "category": "Donuts",
+    "description": "Donut ultra glaseada rellena de almibar de manzana" 
 },
 {
     "id": 11,
     "name": "Muffin Cloud",
     "price": 106,
     "img": "./img/Muffins-cloud.png",
-    "category": "Muffins" 
+    "category": "Muffins",
+    "description": "Muffin decorado con crema pink estellada y una masa super esponjosa sabor chocolate" 
 },
 {
     "id": 12,
     "name": "Muffin Flower",
     "price": 192,
     "img": "./img/Muffins-flower.png",
-    "category": "Muffins" 
+    "category": "Muffins",
+    "description": "Un equipo de siete Muffins que forman una hermosa flor, sus coberturas son frutilla y el Muffins mayor esta relleno de frutilla y salsa de arandanos" 
 },
 {
     "id": 13,
     "name": "Muffin Iris",
     "price": 110,
     "img": "./img/Muffins-iris.png",
-    "category": "Muffins" 
+    "category": "Muffins",
+    "description": "Muffin con cobertura de vainilla, sabor limon y los colores de un arcoiris" 
 },
 {
     "id": 14,
     "name": "PopCake Pink",
     "price": 89,
     "img": "./img/pop-pink.png",
-    "category": "PopCakes" 
+    "category": "PopCakes",
+    "description": "PopCake relleno de biscochuelo especial de chocolate cubierto de chocolate pink"
 },
 {
     "id": 15,
     "name": "PopCake Choco",
     "price": 89,
     "img": "./img/choco-pop.png",
-    "category": "PopCakes" 
+    "category": "PopCakes",
+    "description": "PopCake relleno de biscochuelo especial de chocolate cubierto de chocolate amargo y pintitas arcoiris" 
 },
 {
     "id": 16,
     "name": "PopCake Iris",
     "price": 89,
     "img": "./img/popcake-iris.png",
-    "category": "PopCakes" 
+    "category": "PopCakes",
+    "description": "PopCake relleno de biscochuelo especial pink cubierto de chocolate blanco especial y pintitas de colores" 
 }
 ]

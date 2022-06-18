@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Detail from "./Detail";
+import Item from './Item';
 import '../css/ItemDetail.css';
 
 const ItemDetail = ({productos1})=>{
-    
+
     const [cargando, setCargando] = useState(true)
     const [detalle, setDetalle] = useState(false)
 
@@ -11,7 +12,7 @@ const ItemDetail = ({productos1})=>{
         const donut = new Promise((res, rej) =>{
             setTimeout(()=>{
                 res('Cargando...')
-            }, 4000)
+            }, 2000)
         })
 
         .then((res)=>{
@@ -24,11 +25,13 @@ const ItemDetail = ({productos1})=>{
         })
     }, [])
 
-    return(
-        <>
-            <div>{cargando && 'Cargando...'}</div>
-            <div>{detalle && productos1?.map(producto => <Detail key={producto.id} producto={producto} />)}</div>
+    return(<>
+
+            {cargando && 'Cargando...'}
+            {detalle && productos1?.map((producto) => <Detail key={producto.id} producto={producto}/>)}
+
         </>
+        
     )
 }
 
