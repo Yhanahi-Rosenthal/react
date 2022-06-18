@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Detail from "./Detail";
-import Item from './Item';
 import '../css/ItemDetail.css';
 
 const ItemDetail = ({productos1})=>{
@@ -28,7 +27,7 @@ const ItemDetail = ({productos1})=>{
     return(<>
 
             {cargando && 'Cargando...'}
-            {detalle && productos1?.map((producto) => <Detail key={producto.id} producto={producto}/>)}
+            {detalle && productos1?.map((producto) => <Detail key={producto.id} producto={producto} />).find(producto => producto.id === producto.id)}
 
         </>
         
