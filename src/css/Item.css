@@ -16,7 +16,17 @@
     height: 2rem;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    margin-top: -1.3rem;
+    margin-top: -2.6rem;  
+}
+
+.verDetalle{
+    color: white;
+    text-decoration: none;
+}
+
+.addToCart{
+    color: white;
+    text-decoration: none;
 }
 
 .boton:hover{

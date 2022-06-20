@@ -5,7 +5,13 @@
     background-color: rgb(255, 255, 255, 0);
     width: 6rem;
     height: 1rem;
-    margin: 0 0 7rem 0.8rem;
+    margin: 0 0 2rem 0;
     
 }
 
+.button{
+    width:1.5rem;
+    border-radius: 20rem;
+    border-color: aqua;
+    background-color: rgb(255, 0, 255);
+}

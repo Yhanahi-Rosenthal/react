@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import '../css/ItemCount.css';
 
 export default function ItemCount ({ desde, hasta, onAdd }) {
@@ -9,9 +10,6 @@ export default function ItemCount ({ desde, hasta, onAdd }) {
         
             <>
                 <div className="card-laptop">
-                    <div>
-                        {/* <img src={dona} className="img-laptop" /> */}
-                    </div>
                     <div className="container-contador">
                     <br />
                     <button
@@ -31,13 +29,7 @@ export default function ItemCount ({ desde, hasta, onAdd }) {
                     >
                             +
                     </button>
-                    </div>     
-                        <button className="boton" 
-                            onClick={() =>{
-                               onAdd(numero)
-                            }}> 
-                                Agregar al carrito
-                            </button>
+                    </div>    
                 </div>            
             </>
            
