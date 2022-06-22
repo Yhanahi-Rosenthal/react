@@ -1,14 +1,27 @@
+import { useContext, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/Item.css";
 import '../css/ItemDetail.css';
+import Carrito from "./Carrito";
+import { CartContext } from "./CartContext";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({productos1})=>{
 
-//     const onAdd = (cantidad) =>{
-//     alert('Agregaste ' + cantidad + ' productos al carrito')
-//   }
+    const [cantidad, setContador] = useState(1)
 
+    const {isInCart, addItem, cart, deleteItem} = useContext(CartContext)
+
+    const onAdd = () =>{
+        isInCart(productos1.id)
+        addItem(productos1, cantidad)
+  }
+
+  useEffect(()=>{
+    console.log(cart)
+
+  },[cart])
 
     return(<>
             
@@ -21,8 +34,8 @@ const ItemDetail = ({productos1})=>{
             <div>
                 <p className="descripcion">{productos1.description}</p>
             </div>
-            <ItemCount desde={1} hasta={10} />
-            <button className="botonmas"><Link to="/cart/" className="addToCart">Agregar al carrito</Link></button>            
+            <ItemCount desde={1} hasta={10}  cantidad={cantidad} setContador={setContador} onAdd={onAdd} />   
+            <button onClick={()=>{deleteItem(productos1.id)}}>borrar producto</button>      
             </div>
         </>
         

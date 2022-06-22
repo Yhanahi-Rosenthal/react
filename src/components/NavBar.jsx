@@ -3,6 +3,7 @@ import Carrito from "./CartWidget";
 import {Link} from 'react-router-dom'; 
 
 function NavBar(){
+    
     return( <>
                 
                 <header>
