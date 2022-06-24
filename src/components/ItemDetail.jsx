@@ -11,17 +11,12 @@ const ItemDetail = ({productos1})=>{
 
     const [cantidad, setContador] = useState(1)
 
-    const {isInCart, addItem, cart, deleteItem} = useContext(CartContext)
+    const {isInCart, addItem} = useContext(CartContext)
 
     const onAdd = () =>{
         isInCart(productos1.id)
         addItem(productos1, cantidad)
   }
-
-  useEffect(()=>{
-    console.log(cart)
-
-  },[cart])
 
     return(<>
             
@@ -34,8 +29,7 @@ const ItemDetail = ({productos1})=>{
             <div>
                 <p className="descripcion">{productos1.description}</p>
             </div>
-            <ItemCount desde={1} hasta={10}  cantidad={cantidad} setContador={setContador} onAdd={onAdd} />   
-            <button onClick={()=>{deleteItem(productos1.id)}}>borrar producto</button>      
+            <ItemCount desde={1} hasta={10}  cantidad={cantidad} setContador={setContador} onAdd={onAdd} productos1={productos1} />  
             </div>
         </>
         

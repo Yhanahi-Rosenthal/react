@@ -10,6 +10,7 @@ import PopCake from "./components/PopCake";
 import Donuts from "./components/Donuts";
 import MyProvider from "./components/CartContext";
 import Carrito from "./components/Carrito";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="/Detail/:id" element={<ItemDetailContainer />} />
             <Route path="/Carrito/" element={<Carrito />} />
           </Routes>  
+          <Footer />
         </MyProvider>
       </BrowserRouter>
       

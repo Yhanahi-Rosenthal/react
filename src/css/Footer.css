@@ -1,0 +1,65 @@
+.footer{
+    background-color: rgb(255, 148, 234);
+    width: 100%;
+    margin-top: 10%;
+    color: white;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.sociales{
+    padding: 0;
+    width: 1.9rem;
+    margin-top: 1rem;
+    filter: invert();
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.info div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info div .link{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+}
+
+.info div .link:hover{
+    color: rgb(0, 247, 255);
+    transition: 0.1s;
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.extra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.extra p{
+    color: #ffffff;
+    font-size: 0.7rem;
+    margin: 0.7rem;
+}
+
+.hr{
+    color:#ffffff;
+    border-style:groove;
+}
