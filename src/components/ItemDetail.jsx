@@ -10,13 +10,26 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ({productos1})=>{
 
     const [cantidad, setContador] = useState(1)
-
     const {isInCart, addItem} = useContext(CartContext)
-
     const onAdd = () =>{
         isInCart(productos1.id)
         addItem(productos1, cantidad)
   }
+
+//   useEffect(()=>{
+//     // db me trae la base de datos.
+//     const db = getFirestore()
+//     // ItemCollection agarra la base de datos como primer parametro y como segundo parametro tengo que poner a la colleccion que quier acceder.
+//     const ItemsCollection = collection(db , 'Items')
+//     // getDocs trae la colleccion que trae ItemCollection y devuelte una promesa por lo que hay que tratarlo como una promera con ".then".
+//     getDocs(ItemsCollection).then(res => {
+//         // dentro del map, se hace un return implicito, creo un objeto y traigo con un spread y lo uno con el id de cada producto
+//         setResultado(res.docs.map(doc => ({...doc.data(), id: doc.id})))
+//     }) 
+//     .catch((rej) =>{
+//         console.log('Hubo un error')
+//     })
+// }, [])
 
     return(<>
             

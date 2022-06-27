@@ -1,19 +1,34 @@
-import React, { useEffect, useState } from "react";
-import NavBar from "./components/NavBar";
-import "../src/css/NavBar.css";
-import ItemListContainer from "./components/ItemListContainer";
-import "../src/css/index.css";
-import ItemDetailContainer from "./components/ItemDetailContainer";
+
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Muffins from "./components/Muffins";
-import PopCake from "./components/PopCake";
-import Donuts from "./components/Donuts";
-import MyProvider from "./components/CartContext";
+import "../src/css/index.css";
+import "../src/css/NavBar.css";
 import Carrito from "./components/Carrito";
+import MyProvider from "./components/CartContext";
+import Donuts from "./components/Donuts";
 import Footer from "./components/Footer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemList from "./components/ItemList";
+import Muffins from "./components/Muffins";
+import NavBar from "./components/NavBar";
+import PopCake from "./components/PopCake";
+import { initializeApp } from "firebase/app";
+
 
 
 function App() {
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCcpmvqjDhPdTkxEflnK44vCJSABbkJ2fM",
+    authDomain: "cakecloud-5b22b.firebaseapp.com",
+    projectId: "cakecloud-5b22b",
+    storageBucket: "cakecloud-5b22b.appspot.com",
+    messagingSenderId: "791639510382",
+    appId: "1:791639510382:web:0856cb743a51f5c242457f"
+  };
+  
+  
+  initializeApp(firebaseConfig);  
   
 
   const [productos, setProductos] = useState([]);
@@ -32,8 +47,8 @@ function App() {
           <NavBar />
           <br /><br /><br />
           <Routes>
-            <Route path="/" element={<ItemListContainer />} />
-            <Route path="/Inicio" element={<ItemListContainer />} />
+            <Route path="/" element={<ItemList />} />
+            <Route path="/Inicio" element={<ItemList />} />
             <Route path="/Muffins" element={<Muffins productos={productos} />} />
             <Route path="/PopCake" element={<PopCake productos={productos}  />} />
             <Route path="/Donuts" element={<Donuts productos={productos} />} />

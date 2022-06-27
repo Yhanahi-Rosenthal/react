@@ -59,12 +59,3 @@ export default function Carrito() {
     </>
   );
 }
-
-{/* <button
-            onClick={() => {
-              emptyCart();
-              alert("Eliminaste tu compra");
-            }}
-          >
-            Eliminar compra
-          </button> */}

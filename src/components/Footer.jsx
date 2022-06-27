@@ -19,16 +19,16 @@ export default function Footer(){
 
     return(
         <div>
-            <div class="footer">
-                <div class="redes">
-                    <Link to="https://es-la.facebook.com/"><img src={facebook} alt="" class="sociales" /></Link>
-                    <Link to="https://www.instagram.com/"><img src={insta} alt="" class="sociales" /></Link>
-                    <Link to="https://www.youtube.com/?hl=ES"><img src={you} alt="" class="sociales" /></Link>
-                    <Link to="https://twitter.com/?lang=es"><img src={twi} alt="" class="sociales" /></Link>
-                    <Link to="https://uy.linkedin.com/"><img src={linkedin} alt="" class="sociales" /></Link>
+            <div className="footer">
+                <div className="redes">
+                    <Link to="https://es-la.facebook.com/"><img src={facebook} alt="" className="sociales" /></Link>
+                    <Link to="https://www.instagram.com/"><img src={insta} alt="" className="sociales" /></Link>
+                    <Link to="https://www.youtube.com/?hl=ES"><img src={you} alt="" className="sociales" /></Link>
+                    <Link to="https://twitter.com/?lang=es"><img src={twi} alt="" className="sociales" /></Link>
+                    <Link to="https://uy.linkedin.com/"><img src={linkedin} alt="" className="sociales" /></Link>
                 </div>
                     <hr className="hr" />
-            <div class="info">
+            <div className="info">
                 <div> 
                     <h3>Nosotros</h3>
                     <Link to="/not found" className="link">Nuestra Empresa</Link>
@@ -47,7 +47,7 @@ export default function Footer(){
             </div>
         </div>
         <hr className="hr" />
-        <div class="tarjetas">
+        <div className="tarjetas">
             <img src={visa} alt="" width="50px" height="21px" />
             <img src={masterCard} alt="" width="50px" height="21px" />
             <img src={lider} alt="" width="50px" height="21px" />
@@ -57,7 +57,7 @@ export default function Footer(){
             <img src={mercadoPago} alt="" width="60px" height="21px" />
         </div>
         <hr className="hr" />
-        <div class="extra">
+        <div className="extra">
             <p>Copyright 2022 CakeCloud</p>
             <p>Developed by: Yhanahi Rosenthal</p>
         </div>

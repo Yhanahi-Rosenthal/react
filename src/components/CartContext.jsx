@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { createContext, useState } from "react";
 
 export const CartContext = createContext()
@@ -29,10 +28,6 @@ const MyProvider = ({children}) =>{
             setCart([...cart, newItem])
         }
     }
-
-    useEffect(()=>{
-        console.log(cart)
-    },[cart])
 
     // Metodo filter - cart- se encarga en funcion del ID de retornar un nuevo array sin el producto seleccionado.
     const deleteItem = (id) =>{
