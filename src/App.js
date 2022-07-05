@@ -13,6 +13,8 @@ import Muffins from "./components/Muffins";
 import NavBar from "./components/NavBar";
 import PopCake from "./components/PopCake";
 import { initializeApp } from "firebase/app";
+import Checkout from "./components/Checkout";
+import {Link} from 'react-router-dom';
 
 
 
@@ -54,7 +56,10 @@ function App() {
             <Route path="/Donuts" element={<Donuts productos={productos} />} />
             <Route path="/Detail/:id" element={<ItemDetailContainer />} />
             <Route path="/Carrito/" element={<Carrito />} />
+            <Route path="/Checkout" element={<Checkout />} />
           </Routes>  
+          <br /><br /><br />
+          <button><Link to={"/Checkout"} >Link CheckOut</Link></button>
           <Footer />
         </MyProvider>
       </BrowserRouter>

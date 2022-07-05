@@ -24,7 +24,8 @@ const ItemList = () => {
         })
     }, [])
 
-    return( <>   
+    return(  
+    <div>
         <br /><br /><br />
         <img alt="Portada" src={Portada} className="portada" />
         <div className="contenedor">
@@ -32,7 +33,7 @@ const ItemList = () => {
             {<Item producto={resultado} />}
             {/* {resultado && productos?.map(producto => <Item key={producto.id} producto={producto} />)} */}
         </div>
-        </>
+    </div>
     )
 }
 
