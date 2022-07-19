@@ -9,7 +9,7 @@ const Item = ({producto})=>{
             
                 <div className="card-donut">
                         <div>
-                            <img src={producto.img} className="img-dona" />
+                            {/* <img src={producto.img} className="img-dona" /> */}
                         </div>
                         <p className="nombre">{producto.name}</p>
                         <p className="precio">${producto.price}</p>

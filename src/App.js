@@ -5,16 +5,15 @@ import "../src/css/index.css";
 import "../src/css/NavBar.css";
 import Carrito from "./components/Carrito";
 import MyProvider from "./components/CartContext";
-import Donuts from "./components/Donuts";
 import Footer from "./components/Footer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemList from "./components/ItemList";
-import Muffins from "./components/Muffins";
 import NavBar from "./components/NavBar";
 import PopCake from "./components/PopCake";
 import { initializeApp } from "firebase/app";
 import Checkout from "./components/Checkout";
 import {Link} from 'react-router-dom';
+import Category from "./components/Category";
 
 
 
@@ -51,15 +50,11 @@ function App() {
           <Routes>
             <Route path="/" element={<ItemList />} />
             <Route path="/Inicio" element={<ItemList />} />
-            <Route path="/Muffins" element={<Muffins productos={productos} />} />
-            <Route path="/PopCake" element={<PopCake productos={productos}  />} />
-            <Route path="/Donuts" element={<Donuts productos={productos} />} />
+            <Route path="/Category/:category" element={<Category productos={productos} />} />
             <Route path="/Detail/:id" element={<ItemDetailContainer />} />
             <Route path="/Carrito/" element={<Carrito />} />
             <Route path="/Checkout" element={<Checkout />} />
           </Routes>  
-          <br /><br /><br />
-          <button><Link to={"/Checkout"} >Link CheckOut</Link></button>
           <Footer />
         </MyProvider>
       </BrowserRouter>

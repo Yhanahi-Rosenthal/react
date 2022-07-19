@@ -12,10 +12,10 @@ const MyProvider = ({children}) =>{
         return cart.some(product => product.id === id)
     }
 
-    const addItem = (productos1, cantidad) =>{
+    const addItem = (producto, cantidad) =>{
 
         const newItem = {
-            ...productos1,
+            ...producto,
             cantidad
         }
         if(isInCart(newItem.id)){

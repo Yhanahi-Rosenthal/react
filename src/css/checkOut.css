@@ -1,0 +1,95 @@
+.contenedorcheck{
+    display: flex;
+    justify-content: center;
+}
+
+.Checkout{
+    width: 60rem;
+    height: 26rem;
+    border: solid;
+    border-color: aqua;
+    border-radius: 2rem;
+    background-color: rgb(255, 138, 253);
+}
+
+.Completecompra{
+    text-align: center;
+    color: white;
+}
+
+.contenedorform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 24rem;
+    width: 13rem;
+}
+
+.inputCheck{
+    margin: 3rem 0 0 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 13rem;
+    height: 2rem;
+}
+
+.FINALIZAR{
+    margin-top: 2rem;
+    height: 2rem;
+    align-self: center;
+    border-radius: 2rem;
+    border: none;
+    background-color: black;
+    color: aqua;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.FINALIZAR:hover{
+    color:rgb(255, 138, 253);
+}
+
+.Checkout1{
+    overflow: scroll;
+    width: 60rem;
+    height: 26rem;
+    border: solid;
+    border-color: aqua;
+    border-radius: 2rem;
+    background-color: rgb(255, 138, 253);
+}
+
+.Checkout1::-webkit-scrollbar {
+    width: 6px;          
+    height: 0;
+    background-color: #00eeff00;
+  }
+  
+  .Checkout1::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);       
+  }
+  
+  .Checkout1::-webkit-scrollbar-thumb {
+      background-color: rgba(242, 0, 255, 0.623);
+    border-radius: 10px;   
+    border: 3px solid #00eeff00;
+  }
+
+  .datos{
+    text-align: center;
+    color: white;
+  }
+
+  .datoscart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .checkout2{
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: antiquewhite;
+  }

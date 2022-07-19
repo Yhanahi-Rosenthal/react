@@ -1,15 +1,17 @@
-//@ts-check
 import React, { useEffect, useState } from "react";
+import Item from "./Item";
+import "../css/Item.css";
+import Portada from "../Portada1.png";
 import { useParams } from "react-router-dom";
-import ItemDetail from "./ItemDetail";
 import {collection, getDocs, getFirestore} from 'firebase/firestore';
 
-const ItemDetailContainer = () =>{
-    
-    const {id} = useParams()
+const Category = () => {
 
-    const [products, setResultado] = useState([{}])
+
+    const {category} = useParams()
+
     const [cargando, setCargando] = useState(true)
+    const [products, setProducts] = useState(false)
 
     useEffect(()=>{
         setTimeout(() => {
@@ -21,7 +23,7 @@ const ItemDetailContainer = () =>{
         // getDocs trae la colleccion que trae ItemCollection y devuelte una promesa por lo que hay que tratarlo como una promera con ".then".
         getDocs(ItemsCollection).then(res => {
             // dentro del map, se hace un return implicito, creo un objeto y traigo con un spread y lo uno con el id de cada producto
-            setResultado(res.docs.map(doc => ({...doc.data(), id: doc.id})))
+            setProducts(res.docs.map(doc => ({...doc.data(), id: doc.id})))
         }) 
         .catch((rej) =>{
             console.log('Hubo un error')
@@ -31,18 +33,17 @@ const ItemDetailContainer = () =>{
         }, 2000);
         
     }, [])
-
     
 
-    
-
-    return(
-        <>  
+    return(<>
+        <br /><br /><br />
+        <img alt="Portada" src={Portada} className="portada" />
+        <div className="contenedor">
             {cargando && 'Cargando...'}
-            {products && products?.filter((product) => product.id?.includes(id)).map((producto) => <ItemDetail key={producto.id} producto={producto}/>)}
+            {products && products?.filter(producto => producto.category.includes(category)).map((producto) => <Item key={producto.id} producto={producto}/>)}
+        </div>
         </>
-        
     )
 }
 
-export default ItemDetailContainer
+export default Category;

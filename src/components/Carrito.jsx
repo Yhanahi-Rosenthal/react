@@ -50,7 +50,7 @@ export default function Carrito() {
                                     <h2 className="Total">Total:${getItemPrice()}</h2>
                                     <div className="botones-cart">
                                          <button className="volver-cart"><Link to="/inicio" className="link-cart">← Volver a comprar</Link></button>
-                                         <button className="finalizar-cart"><Link to="/Pagos" className="link-cart">Finalizar compra</Link></button>
+                                         <button className="finalizar-cart"><Link to="/Checkout" className="link-cart">Finalizar compra</Link></button>
                                     </div>
                                     
                                 </div>
