@@ -1,5 +1,4 @@
-//@ts-check
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import "../css/Item.css";
 import '../css/ItemDetail.css';
 import { CartContext } from "./CartContext";

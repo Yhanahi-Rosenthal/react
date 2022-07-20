@@ -4,6 +4,8 @@ Este proyecto fue diseñado con css puro, es una tienda de comidas dulces, en la
 
 El deploy esta hecho en vercel, se puede ver en el siguiente link => https://cake-theta.vercel.app/
 
+El video gif esta hecho en la plataforma vimeo y el enlace que lo direcciona es el siguiente => https://vimeo.com/731571262/0dc352210a
+
 Este proyecto esta hecho exclusivamente para el proyecto final del Curso de React Js de CoderHouse.
 
 ## Available Scripts
