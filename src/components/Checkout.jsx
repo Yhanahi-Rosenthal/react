@@ -21,9 +21,12 @@ export default function Checkout(){
     const db = getFirestore()
     const orderCollection = collection(db, 'Orders')
 
-    function handleClick(){
-        setForm(false)
-        setInvoice(true)
+    function handleClick(){  
+        if(firstName != '' || email != '' || phone != ''){
+            setForm(false)
+            setInvoice(true)
+        }
+        
         const order = {
             buyer: {firstName, email, phone},
             items: cart,

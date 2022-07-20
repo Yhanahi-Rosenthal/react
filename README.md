@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Getting Started with Cake Cloud Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue diseñado con css puro, es una tienda de comidas dulces, en la cual los principales productos son las donas, muffins y popcakes. 
+
+El deploy esta hecho en vercel, se puede ver en el siguiente link => https://cake-theta.vercel.app/
+
+Este proyecto esta hecho exclusivamente para el proyecto final del Curso de React Js de CoderHouse.
 
 ## Available Scripts
 
