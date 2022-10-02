@@ -63,3 +63,59 @@
     color:#ffffff;
     border-style:groove;
 }
+
+.imgTar{
+    width:50px;
+    height:21px;
+}
+
+.abi{
+    width: 56px;
+}
+
+.mer{
+    width: 60px;
+}
+
+@media screen and (max-width: 426px) {
+    .tarjetas{
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 0 0 10rem;
+    }
+    .imgTar{
+        width:40px;
+        height:15px;
+    }
+    
+    .abi{
+        width: 46px;
+    }
+    
+    .mer{
+        width: 50px;
+    }
+    .info{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 0.5fr);
+        margin:0 0 2rem 1rem;
+    }
+    .info h3{
+        font-size: 0.8rem;
+    }
+    .info div .link{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6rem;
+        margin-top: 1rem;
+    }
+    .extra p{
+        color: #ffffff;
+        font-size: 0.6rem;
+        margin: 0.7rem;
+    }
+}

@@ -193,3 +193,207 @@
     align-self: center;
     width: 10rem;
 }
+
+@media screen and (max-width: 426px) {
+    .img-carrito{
+        border: solid;
+        border-radius: 20rem;
+        border-color: aqua;
+        width: 2rem;
+        margin: 0.8rem 0 0 .5rem;
+    }
+    
+    .name-carrito{
+        align-self: center;
+        font-family:cursive;
+        width: 10rem;
+        color: white;
+        font-size: 0.8rem;
+    }
+    
+    .price-carrito{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        align-self: center;
+        font-size: .8rem;
+    }
+    
+    .cart-cantidad{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        align-self: center;
+        font-size: 0.6rem;
+    }
+    
+    .card-carrito{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 2rem;
+        background-color: rgb(251, 165, 241);
+        width: 100%;
+        height: 4rem;
+        border:solid 0.01rem rgb(0, 238, 255);
+        border-radius: 1.4rem;
+    }
+    
+    .cart-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .contenedor-carrito{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* background-color: aliceblue; */
+        gap: 0;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .miCompra{
+        font-family:cursive;
+        text-align: center;
+    }
+    
+    .Total{
+        text-align: center;
+        border: solid rgb(0, 255, 251);
+        border-radius: 1rem;
+        background-color: rgba(242, 0, 255, 0.197);
+        transition: 0.2s;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .resumen{
+        text-align: center;
+        border: solid rgb(0, 255, 251);
+        border-radius: 1rem;
+        background-color: rgba(242, 0, 255, 0.197);
+        color: white;
+    }
+    
+    .link-cart{
+        text-decoration: none;
+        color: rgb(0, 251, 255);
+        padding: 1rem;
+        transition: 0.2s;
+    }
+    .link-cart:hover{
+        color: rgb(255, 0, 251);
+    }
+    
+    
+    .finalizar-cart{
+        background-color: black;
+        height: 2.6rem;
+        border-radius: 1rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .volver-cart{
+        background-color: black;
+        height: 2.6rem;
+        /* width: 7rem; */
+        border-radius: 1rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .botones-cart{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1em;
+    }
+    
+    .basurita{
+        width: 1.5rem;
+        cursor: pointer;
+        margin: 0 .5rem 0 0;
+    }
+    .basurita:hover{
+        visibility: hidden;
+    }
+    
+    .basurita1{
+        width: 1.5rem;
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        margin: 0 .5rem 0 0;
+    }
+    
+    .basurita1:hover{
+        opacity: 1;
+    }
+    
+    .vaciarCarro{
+        background-color: rgb(222, 4, 4);
+        margin-top: 2rem;
+        height: 1.6rem;
+        width: 8rem;
+        border-radius: 1rem;
+        font-size: 0.7rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+     
+    .vaciarCarro:hover{
+        width: 8rem;
+        background-color: rgb(219, 104, 104);
+    }
+    
+    /* .contenedor-cartVacio{
+        display: flex;
+    } */
+    
+    .noHayProductos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* margin: 1rem 0 2rem 0; */
+        width: 16rem;
+        height: 20rem;
+        background-color: rgb(255, 138, 253);
+        border-radius: 2rem;
+        border:solid;
+        border-color: aqua;
+    }
+    
+    .volver-cartVacio{
+        margin: 0 0 3rem 3rem;
+        background-color: black;
+        width: 7rem;
+        border-radius: 2rem;
+    }
+    
+    .link-cartVacio{
+        color: aqua;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: 0.2s;
+    }
+    
+    .link-cartVacio:hover{
+        color: rgb(238, 0, 255);
+    }
+    
+    .noProductos{
+        margin: 0 0 4rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .nose{
+        align-self: center;
+        width: 9rem;
+    }
+    
+}

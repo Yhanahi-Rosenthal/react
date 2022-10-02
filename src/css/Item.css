@@ -72,3 +72,84 @@
     margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 768px){
+    .contenedor{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 0.5fr);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 1.6rem;
+        margin: 1rem 0 3rem 1rem;
+    }
+    .card-donut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 9rem;
+        height: 12rem;
+        box-shadow: 0.5px 0.5px 20px 0.2px rgb(255, 0, 247);
+        background-color: rgb(255, 209, 242);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    .nombre{
+        margin-top: -0.1rem;
+        font-size: 0.8rem;
+    }
+    
+    .precio{
+        margin-top: -1.1rem;
+        font-size: 0.8rem;
+    }
+    
+    .img-dona{
+        margin-top: -1.8rem;
+        width: 6rem;
+        border: solid aqua;
+        border-radius: 20rem;
+        box-shadow: 0 0 3rem -1rem aqua;
+    }
+    
+}
+
+@media screen and (max-width: 426px){
+    .contenedor{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 0.5fr);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 1.6rem;
+        margin: 1rem 0 3rem 2rem;
+    }
+    .card-donut{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 7rem;
+        height: 10rem;
+        box-shadow: 0.5px 0.5px 20px 0.2px rgb(255, 0, 247);
+        background-color: rgb(255, 209, 242);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    .nombre{
+        margin-top: -0.1rem;
+        font-size: 0.8rem;
+    }
+    
+    .precio{
+        margin-top: -1.1rem;
+        font-size: 0.8rem;
+    }
+    
+    .img-dona{
+        margin-top: -1.8rem;
+        width: 5rem;
+        border: solid aqua;
+        border-radius: 20rem;
+        box-shadow: 0 0 3rem -1rem aqua;
+    }
+    
+}

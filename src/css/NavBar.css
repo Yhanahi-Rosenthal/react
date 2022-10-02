@@ -7,6 +7,13 @@
     background-color: rgb(250, 193, 232);
     box-shadow: 1px 1px 100px black;
 }
+.menuMenu{
+    display: none;
+}
+
+.menuCel{
+    display: none;
+}
 
 .inicio{
     margin-left: 1rem;
@@ -133,4 +140,144 @@
 .portada{
   margin: -4.4rem 0 3.5rem 0;
   width: 100%;
+}
+
+@media screen and (max-width: 426px){
+    .MenuNav{
+        display: none;
+    }
+
+    .menu{
+        height: 110%;
+    }
+    .menuCel{
+        display: block;
+        position: absolute;
+        background-color: rgb(245, 112, 255);
+        margin: 2.5rem 0 0 -.5rem;
+        border: solid aqua;
+        height: 16rem;
+        width: 100%;
+    }
+    .menuCel li{
+        margin: 1rem 0 1rem -3rem;
+        list-style: none;
+    }
+
+    .menuMenu{
+        z-index: 20;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: rgb(255, 126, 246);
+        height: 90%;
+        text-align: center;
+        /* margin: 1rem 0 0 0; */
+    }
+
+    .contenedorImg{
+        border: solid rgb(255, 255, 255);
+        border-radius: 0.2rem;
+        height: 1.5rem;
+        margin: .5rem 0 0 .5rem;
+    }
+    .imgMenu{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .inicio1{
+        margin-left: 1rem;
+    }
+    
+    .name-logo1{
+        /* position: absolute;
+        margin: -0.5rem 0 0 -72rem; */
+        color: rgb(205, 112, 255);
+        font-size: 0.7rem;
+        font-style:oblique;
+        font-family:fantasy;
+        text-decoration: none;
+        padding: 2.1rem 0 0 0;
+    }
+    
+    .MenuNav1{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        list-style: none;
+        
+    }
+    
+    .nav1{
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 255, 240);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .nav1:hover{
+        color: rgb(83, 249, 255);
+        transition: 0.3s;
+    }
+    
+    .slach1{
+        color: rgba(255, 255, 255, 0);
+    }
+    
+    .login1{
+        background-color: rgba(255, 255, 255, 0.444);
+        border: solid;
+        border-color: rgb(255, 255, 255);
+        border-radius: 1rem;
+        padding: 0.37rem;
+    }
+    
+    .login1:hover{
+        background-color: rgba(122, 224, 250, 0.444);;
+        border-color: rgb(83, 249, 255); 
+    }
+    
+    .create1{
+        color:  rgb(255, 0, 212);
+        font-size: 1.1rem;
+    }
+    
+    .App1 {
+        text-align: center;
+      }
+      
+      .App-logo1 {
+        border-radius: 200rem;
+        margin: 1rem 0 0 -2rem; 
+        height: 7vmin;
+        border: solid 3px rgb(253, 125, 232);
+        cursor: pointer;
+      }
+      
+      .App-logo1:hover{
+        border: solid 3px rgb(83, 249, 255);
+        border-radius: 20rem;
+      }
+      
+    
+    .cantidad-c1{
+      display: inline;
+    }
+    
+    .carrito1{
+      margin: 0.5rem 0 0 0;
+      padding: 0;
+      filter: invert();
+      width: 1.3rem;
+      height: 1.3rem;
+    }
+    
+    .cantidad-c1{
+      font-size: 0.7rem;
+      padding: 0 0.27rem;
+      background-color: #e21e1e;
+      border-radius: 20rem;
+      color:white;
+    }
 }

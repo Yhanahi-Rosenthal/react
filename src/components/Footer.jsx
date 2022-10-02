@@ -48,13 +48,13 @@ export default function Footer(){
         </div>
         <hr className="hr" />
         <div className="tarjetas">
-            <img src={visa} alt="" width="50px" height="21px" />
-            <img src={masterCard} alt="" width="50px" height="21px" />
-            <img src={lider} alt="" width="50px" height="21px" />
-            <img src={oca} alt="" width="50px" height="21px" />
-            <img src={redPagos} alt="" width="50px" height="21px" />
-            <img src={abitab} alt="" width="56px" height="21px" />
-            <img src={mercadoPago} alt="" width="60px" height="21px" />
+            <img src={visa} alt="" className="imgTar" />
+            <img src={masterCard} alt="" className="imgTar" />
+            <img src={lider} alt="" className="imgTar" />
+            <img src={oca} alt="" className="imgTar" />
+            <img src={redPagos} alt="" className="imgTar" />
+            <img src={abitab} alt="" className="imgTar abi" />
+            <img src={mercadoPago} alt="" className="imgTar mer" />
         </div>
         <hr className="hr" />
         <div className="extra">
